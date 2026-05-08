@@ -7,33 +7,39 @@
 
   <style>
   
-  
-  body {
+ * {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background: #0f0f0f;
-  color: #fff;
-  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
 
 .container {
-  padding: 50px 25px;
+  width: 100%;
+  padding: 80px 28px;
+  text-align: center;
 }
 
 h1 {
-  font-size: 42px;
-  margin-bottom: 30px;
+  font-size: 68px;
+  margin-bottom: 60px;
+  font-weight: bold;
 }
 
 p {
-  font-size: 24px;
-  max-width: 700px;
-  margin: 25px auto;
+  font-size: 34px;
   line-height: 1.8;
+  margin-bottom: 50px;
+
   opacity: 0;
   transform: translateY(20px);
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 .show {
@@ -42,71 +48,38 @@ p {
 }
 
 button {
-  padding: 18px 28px;
-  font-size: 22px;
+  width: 100%;
   border: none;
-  border-radius: 12px;
+  border-radius: 22px;
+
+  padding: 28px;
+
+  font-size: 32px;
+  font-weight: bold;
+
   background: #ff4d6d;
   color: white;
-  cursor: pointer;
-  margin-top: 30px;
+
+  margin-bottom: 60px;
 }
 
 img {
-  max-width: 320px;
   width: 100%;
-  border-radius: 16px;
-  margin-top: 30px;
+  border-radius: 24px;
+  margin-bottom: 60px;
+
   opacity: 0;
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 .assinatura {
-  margin-top: 60px;
+  font-size: 36px;
   font-style: italic;
+
+  margin-top: 80px;
+
   opacity: 0;
   transition: 1s;
-  font-size: 22px;
-}
-
-/* Ajuste específico pra celular */
-@media (max-width: 768px) {
-
-  .container {
-    padding: 70px 30px;
-  }
-
-  h1 {
-    font-size: 64px;
-    margin-bottom: 50px;
-  }
-
-  p {
-    font-size: 34px;
-    line-height: 1.8;
-    max-width: 100%;
-    margin: 40px auto;
-  }
-
-  button {
-    width: 100%;
-    font-size: 32px;
-    padding: 28px;
-    border-radius: 18px;
-    margin-top: 40px;
-  }
-
-  img {
-    max-width: 100%;
-    border-radius: 20px;
-    margin-top: 40px;
-  }
-
-  .assinatura {
-    font-size: 30px;
-    margin-top: 70px;
-  }
-
 }
   </style>
 </head>
